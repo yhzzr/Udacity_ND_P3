@@ -15,6 +15,7 @@ import android.widget.TextView;
  */
 public class scoresAdapter extends CursorAdapter
 {
+
     public static final int COL_HOME = 3;
     public static final int COL_AWAY = 4;
     public static final int COL_HOME_GOALS = 6;
