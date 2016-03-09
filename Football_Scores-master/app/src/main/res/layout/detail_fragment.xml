@@ -14,7 +14,7 @@
             android:text="@string/test_text"
             android:textColor="@android:color/black"
             android:textSize="@dimen/League"
-            android:id="@+id/league_textview"/>
+            android:id="@+id/league_textview" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

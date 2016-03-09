@@ -75,8 +75,11 @@ public class scoresAdapter extends CursorAdapter
             TextView match_day = (TextView) v.findViewById(R.id.matchday_textview);
             match_day.setText(Utilies.getMatchDay(cursor.getInt(COL_MATCHDAY),
                     cursor.getInt(COL_LEAGUE)));
+            match_day.setContentDescription("The match day is "+ Utilies.getMatchDay(cursor.getInt(COL_MATCHDAY),
+                    cursor.getInt(COL_LEAGUE)));
             TextView league = (TextView) v.findViewById(R.id.league_textview);
             league.setText(Utilies.getLeague(cursor.getInt(COL_LEAGUE)));
+            league.setContentDescription("The league is" + Utilies.getLeague(cursor.getInt(COL_LEAGUE)));
             Button share_button = (Button) v.findViewById(R.id.share_button);
             share_button.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -87,6 +90,7 @@ public class scoresAdapter extends CursorAdapter
                     +mHolder.score.getText()+" "+mHolder.away_name.getText() + " "));
                 }
             });
+            share_button.setContentDescription("The share button. Press here to share results");
         }
         else
         {
